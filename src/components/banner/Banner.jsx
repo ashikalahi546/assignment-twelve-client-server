@@ -59,7 +59,7 @@ const Banner = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-[url('/image/carousel2.png')] lg:h-[576px] sm:h-96 bg-cover h-44 bg-center rounded-3xl">
+          <div className="bg-[url('/image/carousel2.png')] lg:h-[576px] sm:h-96 bg-cover h-52 bg-center rounded-3xl">
             <div className="bg-[url('/image/blur.png')]  lg:h-[576px] sm:h-96 h-52 bg-cover bg-center rounded-3xl">
               <div className="lg:w-10/12 w-full items-center sm:text-start text-center flex lg:justify-end justify-center sm:py-20 py-8">
                 <div className="h-96 lg:block hidden bg-white w-1 rounded"></div>
