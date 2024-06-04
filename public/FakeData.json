@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Silver",
+    "title": "Easy manage your inventory and sell online.",
+    "price": 5.0,
+    "employee": 5,
+    "manageDetails": "Easy manage your inventory and sell online.",
+    "listings": "Product listings",
+    "plus": "Everything in Silver plus",
+    "payment": "Flexible payments",
+    "flexible": "Flexible  shipping option",
+    "features": "Discount and promotional features"
+  },
+  {
+    "id": 2,
+    "name": "Gold",
+    "title": "Easy manage your inventory and sell online.",
+    "price": 8.0,
+    "employee": 10,
+    "manageDetails": "Easy manage your inventory and sell online.",
+    "listings": "Product listings",
+    "plus": "Everything in Silver plus",
+    "payment": "Flexible payments",
+    "flexible": "Flexible  shipping option",
+    "features": "Discount and promotional features",
+    "design": true
+  },
+  {
+    "id": 3,
+    "name": "Silver",
+    "title": "Easy manage your inventory and sell online.",
+    "price": 15.0,
+    "employee": 20,
+    "manageDetails": "Easy manage your inventory and sell online.",
+    "listings": "Product listings",
+    "plus": "Everything in Silver plus",
+    "payment": "Flexible payments",
+    "flexible": "Flexible  shipping option",
+    "features": "Discount and promotional features"
+  }
+]

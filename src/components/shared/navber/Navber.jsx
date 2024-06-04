@@ -33,22 +33,22 @@ const Navber = () => {
               open ? "top-11 duration-300 delay-500" : "-top-32"
             }`}
           >
-            {routes.map((route) => (
+            {routes.map((route,idx) => (
               <NavLink
                 className={({ isActive }) => (isActive ? "text-primary" : "")}
                 route={route}
-                key={route.id}
+                key={idx}
                 to={route.path}
               >
                 {route.name}
               </NavLink>
             ))}
           </ul>
-          <div>
+          {/* <div>
             <button className="bg-primary px-5 py-2 text-white  md:text-sm text-xs  font-medium rounded-lg hover:bg-pink-500 duration-100 delay-150">
               Log in
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
