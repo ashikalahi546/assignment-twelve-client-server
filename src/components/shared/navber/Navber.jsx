@@ -11,8 +11,8 @@ const Navber = () => {
     { id: 1, name: "Join as HR Manager", path: "/joinmanager" },
   ];
   return (
-    <div>
-      <div className="md:my-0 my-3 flex md:flex-row flex-col md:gap-0 gap-2 md:items-center justify-between ">
+    <div className="fixed w-full  bg-white z-50 xl:w-8/12 lg:w-10/12 mx-auto lg:px-0 px-5 top-0 py-2">
+      <div className=" flex md:flex-row flex-col md:gap-0 gap-2 md:items-center justify-between ">
         <div className="flex items-center gap-2">
           <img className="md:w-auto w-8" src={logo} alt="" />
           <h3 className="md:text-xl text-lg font-medium text-primary ">
@@ -22,14 +22,14 @@ const Navber = () => {
 
         <div
           onClick={() => setOpen(!open)}
-          className="md:hidden absolute right-4 top-4 text-2xl cursor-pointer "
+          className="md:hidden absolute right-10 top-4 text-2xl cursor-pointer "
         >
           {open ? <RxCross2 /> : <MdMenuOpen />}
         </div>
 
         <div className="flex md:flex-row flex-col justify-between md:items-center items-end ">
           <ul
-            className={`flex md:gap-7 gap-2 md:shadow-[0px] rounded-md bg-white shadow-2xl p-5 md:text-base z-40 text-sm text-[#1F1F1F] font-medium md:static absolute right-2 md:flex-row flex-col ${
+            className={`flex md:gap-7 gap-2 md:shadow-[0px] right-10 rounded-md bg-white shadow-2xl p-5 md:text-base z-40 text-sm text-[#1F1F1F] font-medium md:static absolute  md:flex-row flex-col ${
               open ? "top-11 duration-300 delay-500" : "-top-32"
             }`}
           >
