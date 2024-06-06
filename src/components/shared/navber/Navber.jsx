@@ -11,16 +11,18 @@ const Navber = () => {
     { id: 3, name: "Join as HR Manager", path: "/joinmanager" },
   ];
   return (
-    <div className="fixed w-full  bg-white z-50 xl:w-8/12 lg:w-10/12 mx-auto lg:px-0 px-5 top-0 py-2">
+    <div className="fixed w-full   bg-white z-50 xl:w-8/12 lg:w-10/12 mx-auto lg:px-0 px-5 top-0 py-2">
       <div className=" flex md:flex-row flex-col md:gap-0 gap-2 md:items-center justify-between ">
-        <Link to="/">
-          <div className="flex items-center gap-2">
-            <img className="md:w-auto w-8" src={logo} alt="" />
-            <h3 className="md:text-xl text-lg font-medium text-primary ">
-              Open<span className="text-[#4C99D4]">Sans</span>
-            </h3>
-          </div>
-        </Link>
+        <div className=" w-[200px]">
+          <Link to="/">
+            <div className="flex items-center gap-2">
+              <img className="md:w-auto w-8" src={logo} alt="" />
+              <h3 className="md:text-xl text-lg font-medium text-primary ">
+                Open<span className="text-[#4C99D4]">Sans</span>
+              </h3>
+            </div>
+          </Link>
+        </div>
 
         <div
           onClick={() => setOpen(!open)}
@@ -29,28 +31,32 @@ const Navber = () => {
           {open ? <RxCross2 /> : <MdMenuOpen />}
         </div>
 
-        <div className="flex md:flex-row flex-col justify-between md:items-center items-end ">
+        <div className="xl:w-7/12 md:w-8/12  flex md:flex-row flex-col justify-between md:items-center items-end ">
           <ul
-            className={`flex md:gap-7 gap-2 md:shadow-[0px] right-10 rounded-md bg-white shadow-2xl p-5 md:text-base z-40 text-sm text-[#1F1F1F] font-medium md:static absolute  md:flex-row flex-col ${
-              open ? "top-11 duration-300 delay-500" : "-top-32"
+            className={`flex md:gap-5 md:w-full  items-center justify-between gap-2 md:shadow-[0px] right-10 rounded-md bg-white shadow-2xl p-5 md:text-base z-40 text-sm text-[#1F1F1F] font-medium md:static absolute  md:flex-row flex-col ${
+              open ? "top-11 duration-300 delay-500" : "-top-44"
             }`}
           >
-            {routes.map((route, idx) => (
-              <NavLink
-                className={({ isActive }) => (isActive ? "text-primary" : "")}
-                route={route}
-                key={idx}
-                to={route.path}
-              >
-                {route.name}
-              </NavLink>
-            ))}
+            <li className="flex md:flex-row flex-col md:items-center gap-3">
+              {routes.map((route, idx) => (
+                <NavLink
+                  className={({ isActive }) => (isActive ? "text-primary" : "")}
+                  route={route}
+                  key={idx}
+                  to={route.path}
+                >
+                  {route.name}
+                </NavLink>
+              ))}
+            </li>
+            <li className="md:w-20 w-full">
+              <Link to="/login">
+                <button className="bg-primary px-5 py-2 w-full text-white  md:text-sm text-xs  font-medium rounded-lg hover:bg-pink-500 duration-100 delay-150">
+                  Log in
+                </button>
+              </Link>
+            </li>
           </ul>
-          <Link to="/login">
-            <button className="bg-primary px-5 py-2 text-white  md:text-sm text-xs  font-medium rounded-lg hover:bg-pink-500 duration-100 delay-150">
-              Log in
-            </button>
-          </Link>
         </div>
       </div>
     </div>
