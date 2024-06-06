@@ -1,9 +1,11 @@
-import React from "react";
-import { BsGoogle } from "react-icons/bs";
+import React, { useState } from "react";
+import { BsEye, BsGoogle } from "react-icons/bs";
 import { CgFacebook } from "react-icons/cg";
+import { FaRegEyeSlash } from "react-icons/fa";
 import { TbBrandGithubFilled } from "react-icons/tb";
 
 const JoinEmoloyee = () => {
+  const [showPassword, setShowPassword] = useState(false);
   return (
     <div className="mt-28 flex justify-center ">
       <div className=" p-9 shadow-lg sm:w-[642px] w-full  border rounded-xl">
@@ -28,12 +30,16 @@ const JoinEmoloyee = () => {
             placeholder="Enter your email"
             className="border outline-none text-sm px-4 py-2.5 focus:border-primary rounded-lg w-full"
           />
-
-          <input
-            type="password"
-            placeholder="Type an password"
-            className="border outline-none text-sm px-4 py-2.5 focus:border-primary rounded-lg w-full"
-          />
+          <div className="relative">
+            <input
+              type={showPassword ? "text" : "password"}
+              placeholder="Type an password"
+              className="border outline-none text-sm px-4 py-2.5 focus:border-primary rounded-lg w-full"
+            />
+            <span className="absolute top-3 right-4 cursor-pointer" onClick={() => setShowPassword(!showPassword)}>
+              {showPassword ? <BsEye /> : <FaRegEyeSlash />}
+            </span>
+          </div>
           <button className="border w-full h-10 rounded-lg font-semibold text-white bg-primary hover:bg-pink-500 duration-150 delay-150 sm:text-base text-sm">
             sing Up
           </button>

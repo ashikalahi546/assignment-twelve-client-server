@@ -1,4 +1,9 @@
+import { useState } from "react";
+import { BsEye } from "react-icons/bs";
+import { FaRegEyeSlash } from "react-icons/fa";
+
 const Login = () => {
+  const [showPassword, setShowPassword] = useState(false);
   return (
     <div className="mt-28 flex justify-center ">
       <div className="p-8 shadow-lg sm:w-[474px] w-full items-center border rounded-xl">
@@ -21,12 +26,20 @@ const Login = () => {
             placeholder="Enter your email"
             className="border outline-none text-sm px-4 py-2.5 focus:border-primary rounded-lg w-full mb-5"
           />
-          <input
-            type="password"
-            name="password"
-            placeholder="password"
-            className="border outline-none text-sm px-4 py-2.5 focus:border-primary rounded-lg w-full"
-          />
+          <div className="relative">
+            <input
+              type={showPassword ? "text" : "password"}
+              name="password"
+              placeholder="password"
+              className="border outline-none text-sm px-4 py-2.5 focus:border-primary rounded-lg w-full relative"
+            />
+            <span
+              className="absolute right-4 top-3 cursor-pointer"
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? <BsEye /> : <FaRegEyeSlash />}
+            </span>
+          </div>
           <p className="text-end mt-1 text-sm text-[#1F1F1F80]">
             forgotten password?
           </p>

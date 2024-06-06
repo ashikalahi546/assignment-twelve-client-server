@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import SelectData from "./SelectData";
+import { FaRegEyeSlash } from "react-icons/fa";
+import { BsEye } from "react-icons/bs";
 
 const JoinManager = () => {
+  const [showPassword, setShowPassword] = useState(false);
   const [allData, setData] = useState([]);
 
   useEffect(() => {
@@ -49,18 +52,26 @@ const JoinManager = () => {
               placeholder="Enter your email"
               className="border outline-none text-sm px-4 py-2.5 focus:border-primary rounded-lg w-full"
             />
-            <input
-              type="password"
-              name="password"
-              placeholder="Type an password"
-              className="border outline-none text-sm px-4 py-2.5 focus:border-primary rounded-lg w-full"
-            />
+            <div className="relative">
+              <input
+                type={showPassword ? "text" : "password"}
+                name="password"
+                placeholder="Type an password"
+                className="border outline-none text-sm px-4 py-2.5 focus:border-primary rounded-lg w-full"
+              />
+              <span
+                className="cursor-pointer absolute right-4 top-3"
+                onClick={() => setShowPassword(!showPassword)}
+              >
+                {showPassword ? <BsEye /> : <FaRegEyeSlash />}
+              </span>
+            </div>
           </div>
         </div>
       </div>
       <div>
         <h2 className="md:text-3xl text-xl font-bold text-center mt-8">
-          Select a package 
+          Select a package
         </h2>
 
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-10 my-10">
