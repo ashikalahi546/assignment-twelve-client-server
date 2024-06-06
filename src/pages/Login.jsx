@@ -11,7 +11,7 @@ const Login = () => {
             EMPLOYEE
           </button>
         </div>
-        <h2 className="text-center lg:text-[40px] sm:text-3xl text-2xl font-medium my-8">
+        <h2 className="text-center lg:text-[40px] sm:text-3xl text-xl font-medium my-8">
           Login in to Continue
         </h2>
         <div className="mt-5 px-5">

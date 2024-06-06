@@ -13,7 +13,7 @@ const JoinManager = () => {
     <div className="mt-28">
       <div className=" flex justify-center ">
         <div className=" p-9 shadow-lg sm:w-[599px] w-full  border rounded-xl">
-          <h2 className="text-center lg:text-[40px] sm:text-3xl text-2xl font-medium ">
+          <h2 className="text-center lg:text-[40px] sm:text-3xl text-xl font-medium ">
             Register as HR Manager
           </h2>
           <div className="md:px-10 flex flex-col gap-3">
@@ -60,7 +60,7 @@ const JoinManager = () => {
       </div>
       <div>
         <h2 className="md:text-3xl text-xl font-bold text-center mt-8">
-          Select a package{" "}
+          Select a package 
         </h2>
 
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-10 my-10">

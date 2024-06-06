@@ -7,11 +7,11 @@ const JoinEmoloyee = () => {
   return (
     <div className="mt-28 flex justify-center ">
       <div className=" p-9 shadow-lg sm:w-[642px] w-full  border rounded-xl">
-        <h2 className="text-center lg:text-[40px] sm:text-xl text-2xl font-medium ">
+        <h2 className="text-center lg:text-[40px] sm:text-3xl text-xl font-medium ">
           Register as new Employee
         </h2>
-        <div className="px-14 mt-8 flex flex-col gap-4">
-          <div className="flex gap-5">
+        <div className="md:px-14 mt-8 flex flex-col gap-4">
+          <div className="flex md:flex-row flex-col gap-5">
             <input
               type="text"
               placeholder="Enter your name"
@@ -38,10 +38,10 @@ const JoinEmoloyee = () => {
             sing Up
           </button>
 
-          <div className="flex items-center gap-3">
-            <div className="w-4/12 border-b border-[#1F1F1F]"></div>
-            <p className="text-sm font-semibold">Also Sign up with</p>
-            <div className="w-4/12 border-b border-[#1F1F1F]"></div>
+          <div className="flex sm:flex-row flex-col items-center gap-3">
+            <div className="sm:w-4/12 w-full  border-b border-[#1F1F1F]"></div>
+            <p className="text-sm font-semibold ">Also Sign up with</p>
+            <div className="sm:w-4/12 w-full border-b border-[#1F1F1F]"></div>
           </div>
           <div>
             <button className=" border-[#1F1F1F] border w-full rounded-lg h-10 flex items-center justify-center gap-1.5 font-medium text-[#4C99D4]">
