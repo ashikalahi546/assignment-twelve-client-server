@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="sm:mt-20 mt-16">
+    <div className="sm:mt-24 mt-16">
       <Swiper
       spaceBetween={20}
         slidesPerView={1}

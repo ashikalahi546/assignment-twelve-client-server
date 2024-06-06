@@ -37,10 +37,12 @@ const SelectData = ({ data }) => {
         <div>
           <button
             className={`px-5 py-2 w-full my-5   md:text-sm text-xs  font-medium rounded-lg hover:bg-pink-500 duration-100 delay-150 ${
-              design ? "bg-primary text-white" : "text-primary border border-primary hover:text-white"
+              design
+                ? "bg-primary text-white"
+                : "text-primary border border-primary hover:text-white"
             }`}
           >
-          Select
+            Selected
           </button>
         </div>
 
@@ -67,6 +69,7 @@ const SelectData = ({ data }) => {
           </div>
         </div>
       </div>
+   
     </div>
   );
 };
